@@ -39,9 +39,9 @@ public class RobotContainer {
             new TeleopSwerve(
                 s_Swerve,
                 driver, 
-                () -> -driver.getRawAxis(translationAxis), 
-                () -> -driver.getRawAxis(strafeAxis),
-                () -> -driver.getRawAxis(rotationAxis), 
+                () -> Math.pow(-driver.getRawAxis(translationAxis), 2), 
+                () -> Math.pow(-driver.getRawAxis(strafeAxis), 2),
+                () -> Math.pow(-driver.getRawAxis(rotationAxis), 2), 
                 () -> false
             )
         );
