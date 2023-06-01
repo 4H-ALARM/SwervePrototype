@@ -29,6 +29,7 @@ public class Swerve extends SubsystemBase {
         gyro = new AHRS(Port.kMXP);
         gyro.calibrate();
         zeroGyro();
+        Timer.delay(2);
 
         mSwerveMods = new SwerveModule[] {
             new SwerveModule(0, Constants.Swerve.Mod0.constants),

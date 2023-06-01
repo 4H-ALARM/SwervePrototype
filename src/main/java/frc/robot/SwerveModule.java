@@ -106,6 +106,7 @@ public class SwerveModule {
     private void configAngleEncoder(){        
         absoluteEncoder.configFactoryDefault();
         absoluteEncoder.configAllSettings(Robot.ctreConfigs.swerveCanCoderConfig);
+        // absoluteEncoder.configMagnetOffset(angleOffset.getDegrees());
     }
 
     private void configAngleMotor(){
