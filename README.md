@@ -1,8 +1,3 @@
-# BaseNeoSwerve </br>
-
-**Basic Swerve Code for a Swerve Module using Neo Motors, a CTRE CANCoder, and a NavX Gyro** </br>
-This version was designed for Swerve Drive Specialties MK4 modules.</br>
-
 **Setting Constants**
 ----
 The following things must be adjusted to your robot and module's specific constants in the Constants.java file (all distance units must be in meters, and rotation units in radians):</br>
@@ -26,4 +21,4 @@ This code is natively setup to use a xbox controller to control the swerve drive
 * Left Trigger: Enables Brake Mode while held (20% Max Speed)
 * Right Trigger: Enables Boost Mode while held (100% Max Speed)
 <b> The Default Max Speed is 60% </b> <br></br>
-**Code Taken From Team 364 BaseFalconSwerve at https://github.com/Team364/BaseFalconSwerve**
+**Code Taken From Team 364 BaseFalconSwerve at https://github.com/RaiderRobotix/BaseNeoSwerve**
