@@ -38,11 +38,11 @@ public final class Constants {
         //Module 0
         public static final double frontLeftWheelOffset = 76.37;
         //Module 1
-        public static final double frontRightWheelOffset = -321.32;
+        public static final double frontRightWheelOffset = 321.32-180;
         //Module 2
-        public static final double backLeftWheelOffset = 0;
+        public static final double backLeftWheelOffset = 32.6-180;
         //Module 3
-        public static final double backRightWheelOffset =-214.1+90;
+        public static final double backRightWheelOffset =336.44-180;
 
         /* Module Gear Ratios */
         public static final double driveGearRatio = chosenModule.driveGearRatio;
@@ -93,7 +93,7 @@ public final class Constants {
         /** Meters per Second */
         public static final double maxSpeed = 4.87;
         /** Radians per Second */
-        public static final double maxAngularVelocity = 30.0;
+        public static final double maxAngularVelocity=30.0;
 
         /* Neutral Modes */
         public static final IdleMode angleNeutralMode = IdleMode.kCoast;

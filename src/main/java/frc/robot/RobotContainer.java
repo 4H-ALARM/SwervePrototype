@@ -31,6 +31,12 @@ public class RobotContainer {
 
     /* Subsystems */
     private final Swerve s_Swerve = new Swerve();
+    private final LED s_LED = new LED();
+
+
+    public void robotinit() {
+        s_LED.startLED();
+    }
 
 
     /** The container for the robot. Contains subsystems, OI devices, and commands. */

@@ -37,11 +37,11 @@ public class TeleopSwerve extends CommandBase {
         double maxSpeed;
 
         if(driver.getRawAxis(2) >= .70){
-            maxSpeed = 0.2;
+            maxSpeed = 0.02;//0.2;
         } else if (driver.getRawAxis(3) >= .70){
-            maxSpeed = 1;
+            maxSpeed = 0.1;//1;
         } else {
-            maxSpeed = 0.6;
+            maxSpeed = 0.06;//0.6;
         }
 
 
