@@ -22,6 +22,6 @@ public class LED extends SubsystemBase {
 
   @Override
   public void periodic() {
-    
+    blinkin1.set(1.5);
   }
 }
