@@ -1,5 +1,7 @@
 package frc.robot;
 
+import java.security.KeyStore.TrustedCertificateEntry;
+
 import com.ctre.phoenix.motorcontrol.NeutralMode;
 import com.revrobotics.CANSparkMax.IdleMode;
 

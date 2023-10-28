@@ -23,12 +23,12 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 public class Swerve extends SubsystemBase {
     public SwerveDriveOdometry swerveOdometry;
     public SwerveModule[] mSwerveMods;
-    public AHRS gyro;
+    public Pigeon2 gyro;
 
     public Swerve() {
-        gyro = new AHRS(Port.kMXP);
-        gyro.calibrate();
-        zeroGyro();
+        gyro = new Pigeon2(30);
+        //gyro.calibrate();
+        gyro.setYaw(0);
         Timer.delay(2);
 
         mSwerveMods = new SwerveModule[] {
@@ -102,7 +102,7 @@ public class Swerve extends SubsystemBase {
     }
 
     public void zeroGyro(){
-        gyro.zeroYaw();
+        gyro.setYaw(0);
     }
 
     public Rotation2d getYaw() {
